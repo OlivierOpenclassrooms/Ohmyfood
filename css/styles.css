@@ -1,17 +1,48 @@
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
+h4 {
+  color: white;
+  font-family: "Shrikhand";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 header {
-  height: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+  background-color: #353535;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+footer a {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+footer i {
+  width: 15px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
