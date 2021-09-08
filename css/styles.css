@@ -11,6 +11,11 @@ h2 {
   width: 100%;
 }
 
+.titre-restaurant h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
 h4 {
   color: white;
   font-family: "Shrikhand";
@@ -18,7 +23,7 @@ h4 {
   margin-bottom: 20px;
 }
 
-.recherche-btn {
+.bouton {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -31,7 +36,7 @@ h4 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 400ms;
 }
-.recherche-btn:hover {
+.bouton:hover {
   filter: brightness(1.07);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -50,6 +55,25 @@ h4 {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.header-pages {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.header-pages a {
+  text-decoration: none;
+}
+.header-pages i {
+  position: absolute;
+  left: 50px;
+  bottom: 33px;
+  color: black;
 }
 
 footer {
@@ -84,6 +108,17 @@ footer i {
   max-width: 1024px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.conteneur-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #f2f2f2;
+  border-radius: 40px 40px 0 0;
 }
 
 /*LOCALISATION ET RECHERCHE*/
@@ -291,6 +326,26 @@ VERSION MOBILE
   .restaurants__choix__carte {
     width: 95%;
   }
+}
+.page-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  box-sizing: content-box;
+}
+.page-restaurant img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  margin-bottom: -50px;
+}
+
+.titre-restaurant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

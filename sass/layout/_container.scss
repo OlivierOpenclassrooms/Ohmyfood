@@ -4,3 +4,14 @@
     padding-right: 10px;
     padding-left: 10px;
 }
+
+.conteneur-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    border-radius: 40px 40px 0 0;
+}

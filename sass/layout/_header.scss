@@ -6,6 +6,21 @@
     width: 100%;
 }
 
-.header-restaurants {
-
+.header-pages {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    a {
+        text-decoration: none;
+    }
+        i {
+            position: absolute;
+            left: 50px;
+            bottom: 33px;
+            color: black;
+        }
 }
