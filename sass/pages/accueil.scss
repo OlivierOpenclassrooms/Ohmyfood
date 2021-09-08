@@ -166,7 +166,8 @@
             font-size: 20px;
         }
     i {
-        transition: all 1000ms;
+        margin-right: 20px;
+        transition-duration: 700ms;
     }
     i:hover {
         color: $couleur-secondaire;

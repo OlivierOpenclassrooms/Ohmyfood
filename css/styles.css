@@ -243,7 +243,8 @@ footer i {
   font-size: 20px;
 }
 .carte__contenu i {
-  transition: all 1000ms;
+  margin-right: 20px;
+  transition-duration: 700ms;
 }
 .carte__contenu i:hover {
   color: #FF79DA;
