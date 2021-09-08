@@ -8,13 +8,16 @@ footer {
         padding-bottom: 30px;
         padding-left: 20px;
         }
+        span {
+            margin-bottom: 10px;
+        }
         a {
-            display: flex;
             align-items: center;
             text-decoration: none;
             color: white;
-            margin-bottom: 10px;
-            width:20%;
+        }
+        a:hover {
+            text-decoration: underline;
         }
             i {
                 width: 15px;
