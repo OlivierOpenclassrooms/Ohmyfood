@@ -28,9 +28,16 @@
     background-color: #f2f2f2;
     padding-bottom: 40px;
     text-align: center;
+    h2 {
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     p {
         margin-top: 0;
         margin-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -198,10 +205,12 @@ VERSION MOBILE
 
     /*RESTAURANTS MOBILE*/
 
+    h2 {
+        margin-left: 10px;
+        }
+
     .restaurants {
         &__choix {
-            display: flex;
-            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: center;
