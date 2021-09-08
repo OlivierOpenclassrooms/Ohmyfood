@@ -36,6 +36,14 @@ h4 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.coeur i {
+  transition-duration: 700ms;
+}
+.coeur i:hover {
+  color: #FF79DA;
+  font-weight: bold;
+}
+
 .header-accueil {
   height: 80px;
   display: flex;
@@ -207,7 +215,7 @@ footer i {
   flex-direction: column;
   box-sizing: content-box;
   width: 48%;
-  height: 300px;
+  height: 280px;
   position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin-bottom: 50px;
@@ -239,7 +247,8 @@ footer i {
   align-items: center;
   justify-content: space-between;
   height: 20%;
-  padding: 10px;
+  padding: 15px;
+  margin-right: 20px;
   color: black;
 }
 .carte__contenu p {
@@ -248,14 +257,6 @@ footer i {
 .carte__contenu span {
   font-weight: bold;
   font-size: 20px;
-}
-.carte__contenu i {
-  margin-right: 20px;
-  transition-duration: 700ms;
-}
-.carte__contenu i:hover {
-  color: #FF79DA;
-  font-weight: bold;
 }
 
 /*****************
