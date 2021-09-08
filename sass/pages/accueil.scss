@@ -35,6 +35,9 @@
         flex-direction: row;
         justify-content: space-between;
         width: 95%;
+        padding: 0;
+        list-style: none;
+        counter-reset: li;
     }
     
 }
@@ -50,6 +53,7 @@
     position: relative;
     width: 25%;
     font-weight: bold;
+    transition: all 400ms;
     &::before {
         display: flex;
         content: counter(li);
@@ -73,8 +77,11 @@
         background-color: rgb(147,86,220,0.1);
         color: $couleur-primaire;
     }
-    p:hover {
-        color: inherit;
+    span:not(:hover) {
+        color: black;
+    }
+    span:hover {
+        color: black;
     }
 }
 
@@ -88,6 +95,8 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+        max-width: 1024px;
+        margin: auto;
     }
 }
 
@@ -118,7 +127,9 @@
         right: 10px;
         top: 10px;
     }
-    .carte__contenu {
+}
+
+.carte__contenu {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -126,14 +137,44 @@
         height: 20%;
         padding: 10px;
         color: black;
-    }
-}
-
-.carte__contenu {
     p {
         line-height: 1.5;
     }
         span {
             font-weight: bold;
         }
+    i {
+        transition: all 1000ms;
+    }
+    i:hover {
+        color: $couleur-secondaire;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .restaurants {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f2f2f2;
+        &__choix {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    .restaurants__choix__carte {
+        display: flex;
+        flex-direction: column;
+        box-sizing: content-box;
+        width: 95%;
+        height: 300px;
+        position: relative;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        margin-bottom: 50px;
+        border-radius: 20px 20px 20px 20px;
+        text-decoration: none;
+    }
 }
