@@ -61,6 +61,7 @@ footer a {
   text-decoration: none;
   color: white;
   margin-bottom: 10px;
+  width: 20%;
 }
 footer i {
   width: 15px;
@@ -74,6 +75,7 @@ footer i {
   padding-left: 10px;
 }
 
+/*LOCALISATION ET RECHERCHE*/
 .localisation {
   display: flex;
   flex-direction: row;
@@ -86,6 +88,11 @@ footer i {
 }
 .localisation i {
   margin-right: 20px;
+  color: #363636;
+}
+.localisation p {
+  color: #363636;
+  font-size: 17px;
 }
 
 .recherche {
@@ -98,7 +105,12 @@ footer i {
   padding-bottom: 40px;
   text-align: center;
 }
+.recherche p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 
+/*FONCTIONNEMENT*/
 .explication {
   display: flex;
   flex-direction: column;
@@ -117,9 +129,6 @@ footer i {
   padding: 0;
   list-style: none;
   counter-reset: li;
-}
-.explication h4 {
-  position: absolute;
 }
 
 .explication__liste__elements {
@@ -167,6 +176,7 @@ footer i {
   color: black;
 }
 
+/*RESTAURANTS*/
 .restaurants {
   display: flex;
   align-items: center;
@@ -201,10 +211,12 @@ footer i {
 }
 .restaurants__choix__carte .nouveau {
   border: 1px transparent;
-  padding: 10px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #99E2D0;
   text-decoration: none;
-  color: #32b091;
+  color: #2c9c81;
   font-weight: bold;
   position: absolute;
   right: 10px;
@@ -225,6 +237,7 @@ footer i {
 }
 .carte__contenu span {
   font-weight: bold;
+  font-size: 20px;
 }
 .carte__contenu i {
   transition: all 1000ms;
@@ -238,6 +251,7 @@ footer i {
 VERSION MOBILE
 *****************/
 @media only screen and (max-width: 768px) {
+  /*FONCTIONNMENT MOBILE*/
   .explication__liste {
     flex-direction: column;
     justify-content: center;
@@ -250,6 +264,7 @@ VERSION MOBILE
     width: 95%;
   }
 
+  /*RESTAURANTS MOBILE*/
   .restaurants__choix {
     display: flex;
     flex-wrap: wrap;
