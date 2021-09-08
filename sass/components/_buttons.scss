@@ -1,0 +1,13 @@
+.recherche-btn {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    background: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+    &:hover {
+        
+    }
+}

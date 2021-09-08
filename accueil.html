@@ -8,7 +8,10 @@
         <script src="https://kit.fontawesome.com/153d2c7264.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
+
+       
+
+        <header class="header-accueil">
             <h1>ohmyfood</h1>
         </header>
         <main>
@@ -18,61 +21,63 @@
                     <p>Paris, Belleville</p>
                 </div>
                 <div class="recherche">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
-                    <a href="#" class="recherche__btn">Explorer</a>
+                    <h2>Réservez le menu qui <br>vous convient</h2>
+                    <p>Découvrez des restaurants d'exception,<br> sélectionnés par nos soins</p>
+                    <a class="recherche-btn">Explorer nos restaurants</a>
                 </div>
             </section>
             <section class="explication">
-                <h2>Fonctionnement</h2>
-                <ul class="explication__liste">
-                    <li class="explication__liste__elements">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>Choisissez un restaurant</p>
-                    </li>
-                    <li class="explication__liste__elements">
-                        <i class="fas fa-list-ul"></i>
-                        <p>Composez votre menu</p>
-                    </li>
-                    <li class="explication__liste__elements">
-                        <i class="fas fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </li>
-                </ul>
+                    <h2>Fonctionnement</h2>
+                    <ul class="explication__liste">
+                        <li class="explication__liste__elements">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Choisissez un restaurant</p>
+                        </li>
+                        <li class="explication__liste__elements">
+                            <i class="fas fa-list-ul"></i>
+                            <p>Composez votre menu</p>
+                        </li>
+                        <li class="explication__liste__elements">
+                            <i class="fas fa-store"></i>
+                            <p>Dégustez au restaurant</p>
+                        </li>
+                    </ul>
             </section>
             <section class="restaurants">
-                <h2>Restaurants</h2>
-                <div class="restaurants__choix">
-                    <a href="/La-palette-du-goût.html" class="restaurants__choix__carte">
-                        <img src="Maquettes_Ohmyfood/images/restaurants/la_palette_du_goût.jpg" alt="Plat du restaurant La palette du goût">
-                        <p>Nouveau</p>
-                        <div class="carte__contenu">
-                            <p><span class="carte__contenu__titre">La palette du goût</span><br>Ménilmontant</p>
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </a>
-                    <a href="/La-note-enchantée.html" class="restaurants__choix__carte">
-                        <img src="Maquettes_Ohmyfood/images/restaurants/la_note_enchantée.jpg" alt="Plat du restaurant la note enchantée">
-                        <p>Nouveau</p>
-                        <div class="carte__contenu">
-                            <p><span class="carte__contenu__titre">La note enchantée</span><br>Charonne</p>
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </a>
-                    <a href="/A-la-française.html" class="restaurants__choix__carte">
-                        <img src="Maquettes_Ohmyfood/images/restaurants/à_la_française.jpg" alt="Plat du restaurant A la française">
-                        <div class="carte__contenu">
-                            <p><span class="carte__contenu__titre">A la française</span><br>Cité Rouge</p>
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </a>
-                    <a href="/Le-délice-des-sens.html" class="restaurants__choix__carte">
-                        <img src="Maquettes_Ohmyfood/images/restaurants/le_délice_des_sens.jpg" alt="Plat du restaurant Le délice des sens">
-                        <div class="carte__contenu">
-                            <p><span class="carte__contenu__titre">Le délice des sens</span><br>Folie-Méricourt</p>
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </a>
+                <div class="conteneur">
+                    <h2>Restaurants</h2>
+                    <div class="restaurants__choix">
+                        <a href="/La-palette-du-goût.html" class="restaurants__choix__carte">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/la_palette_du_goût.jpg" alt="Plat du restaurant La palette du goût">
+                            <span class="nouveau">Nouveau</span>
+                            <div class="carte__contenu">
+                                <p><span class="carte__contenu__titre">La palette du goût</span><br>Ménilmontant</p>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </a>
+                        <a href="/La-note-enchantée.html" class="restaurants__choix__carte">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/la_note_enchantée.jpg" alt="Plat du restaurant la note enchantée">
+                            <span class="nouveau">Nouveau</span>
+                            <div class="carte__contenu">
+                                <p><span class="carte__contenu__titre">La note enchantée</span><br>Charonne</p>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </a>
+                        <a href="/A-la-française.html" class="restaurants__choix__carte">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/à_la_française.jpg" alt="Plat du restaurant A la française">
+                            <div class="carte__contenu">
+                                <p><span class="carte__contenu__titre">A la française</span><br>Cité Rouge</p>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </a>
+                        <a href="/Le-délice-des-sens.html" class="restaurants__choix__carte">
+                            <img src="Maquettes_Ohmyfood/images/restaurants/le_délice_des_sens.jpg" alt="Plat du restaurant Le délice des sens">
+                            <div class="carte__contenu">
+                                <p><span class="carte__contenu__titre">Le délice des sens</span><br>Folie-Méricourt</p>
+                                <i class="far fa-heart fa-2x"></i>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
