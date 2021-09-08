@@ -5,7 +5,7 @@
     justify-content: center;
     font-size: 18px;
     width: 100%;
-    background-color: #eeeeee;
+    background-color: #e9e9e9;
     box-shadow: inset 0px 2px 3px rgb(199, 199, 199);
     i {
         margin-right: 20px;
@@ -19,7 +19,7 @@
     align-items: center;
     width: 100%;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -28,8 +28,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
     &__liste {
         display: flex;
         flex-direction: row;
@@ -38,6 +40,9 @@
         padding: 0;
         list-style: none;
         counter-reset: li;
+    }
+    h4 {
+        position: absolute;
     }
     
 }
@@ -48,6 +53,8 @@
     align-items: center;
     background-color: #f2f2f2;
     padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     position: relative;
@@ -152,29 +159,36 @@
     }
 }
 
+
+/*****************
+VERSION MOBILE
+*****************/
+
 @media only screen and (max-width: 768px) {
-    .restaurants {
-        display: flex;
-        align-items: center;
+
+    .explication__liste {
+        flex-direction: column;
         justify-content: center;
-        background-color: #f2f2f2;
+        align-items: center;
+        width: 90%; 
+    }
+
+    .explication__liste__elements {
+        margin-bottom: 40px;
+        width: 95%;
+    }
+
+    .restaurants {
         &__choix {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
     }
     .restaurants__choix__carte {
-        display: flex;
-        flex-direction: column;
-        box-sizing: content-box;
         width: 95%;
-        height: 300px;
-        position: relative;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        margin-bottom: 50px;
-        border-radius: 20px 20px 20px 20px;
-        text-decoration: none;
     }
 }
