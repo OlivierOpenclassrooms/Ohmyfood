@@ -24,13 +24,15 @@ h4 {
 }
 
 .bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 16px;
-  padding: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 50px;
+  width: 230px;
   border-radius: 40px 40px 40px 40px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -71,7 +73,7 @@ h4 {
 }
 .header-pages i {
   position: absolute;
-  left: 50px;
+  left: 30px;
   bottom: 33px;
   color: black;
 }
@@ -115,8 +117,8 @@ footer i {
   display: flex;
   flex-direction: column;
   max-width: 1024px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
   background-color: #f2f2f2;
   border-radius: 40px 40px 0 0;
 }
@@ -193,11 +195,11 @@ footer i {
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
   width: 25%;
   font-weight: bold;
   transition: all 400ms;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .explication__liste__elements::before {
   display: flex;
@@ -252,10 +254,10 @@ footer i {
   width: 48%;
   height: 280px;
   position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin-bottom: 50px;
   border-radius: 20px 20px 20px 20px;
   text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .restaurants__choix__carte img {
   height: 70%;
@@ -337,8 +339,8 @@ VERSION MOBILE
 .page-restaurant img {
   object-fit: cover;
   width: 100%;
-  height: 500px;
-  margin-bottom: -50px;
+  height: 400px;
+  margin-bottom: -60px;
 }
 
 .titre-restaurant {
@@ -346,6 +348,73 @@ VERSION MOBILE
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.menu__contenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.menu__carte {
+  width: 32%;
+}
+
+.menu__contenu p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.menu__contenu__titre {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu__contenu__prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.placement-bouton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .titre-restaurant {
+    width: 95%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .menu__carte {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
