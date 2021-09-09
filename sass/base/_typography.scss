@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: 'Shrikhand', sans-serif !important;
 }
 
 h2 {
@@ -18,7 +18,7 @@ h2 {
 
 h4 {
     color: white;
-    font-family: 'Shrikhand';
+    font-family: 'Shrikhand' !important;
     font-size: 20px;
     margin-bottom: 20px;
 }
