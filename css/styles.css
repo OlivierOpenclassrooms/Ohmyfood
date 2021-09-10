@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand", sans-serif !important;
 }
 
 h2 {
@@ -12,13 +12,13 @@ h2 {
 }
 
 .titre-restaurant h2 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand", sans-serif !important;
   font-size: 30px;
 }
 
 h4 {
   color: white;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand" !important;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -119,7 +119,7 @@ footer i {
   max-width: 1024px;
   padding-right: 25px;
   padding-left: 25px;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   border-radius: 40px 40px 0 0;
 }
 
@@ -131,7 +131,7 @@ footer i {
   justify-content: center;
   font-size: 18px;
   width: 100%;
-  background-color: #e9e9e9;
+  background-color: #e5e5e5;
   box-shadow: inset 0px 2px 3px #c7c7c7;
 }
 .localisation i {
@@ -149,7 +149,7 @@ footer i {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -190,7 +190,7 @@ footer i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   padding: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -236,7 +236,7 @@ footer i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
 }
 .restaurants__choix {
   display: flex;
@@ -373,12 +373,28 @@ VERSION MOBILE
   width: 32%;
 }
 
+.menu__carte h3 {
+  position: relative;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.menu__carte h3::before {
+  content: "";
+  height: 3px;
+  width: 50px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+
 .menu__contenu p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1.5;
   margin: 0;
+  font-weight: 300;
 }
 
 .menu__contenu__titre {
@@ -400,6 +416,44 @@ VERSION MOBILE
   margin-bottom: 50px;
 }
 
+.animation-entrees {
+  transform: scaleY(0);
+  animation-delay: 100ms;
+  animation-duration: 300ms;
+  animation-name: animation-menu;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
+  transform-origin: top;
+}
+
+.animation-plats {
+  transform: scaleY(0);
+  animation-duration: 300ms;
+  animation-delay: 400ms;
+  animation-name: animation-menu;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
+  transform-origin: top;
+}
+
+.animation-desserts {
+  transform: scaleY(0);
+  animation-duration: 300ms;
+  animation-delay: 700ms;
+  animation-name: animation-menu;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
+  transform-origin: top;
+}
+
+@keyframes animation-menu {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
 @media only screen and (max-width: 768px) {
   .titre-restaurant {
     width: 95%;

@@ -42,12 +42,28 @@
     }
 }
 
+.menu__carte h3 {
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 30px;
+        &::before {
+        content: "";
+        height:3px;
+        width: 50px;
+        background-color: $couleur-tertiaire;
+        position: absolute;
+        bottom:-10px;
+        left: 0px;
+        }
+}
+
 .menu__contenu p {
     overflow: hidden;
     text-overflow: ellipsis; 
     white-space: nowrap;
     line-height: 1.5;
     margin: 0;
+    font-weight: 300;
 }
 
 .menu__contenu__titre {
@@ -67,6 +83,45 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+}
+
+.animation-entrees {
+    transform: scaleY(0);
+    animation-delay: 100ms;
+    animation-duration: 300ms;
+    animation-name: animation-menu;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+    transform-origin: top;
+}
+
+.animation-plats {
+    transform: scaleY(0);
+    animation-duration: 300ms;
+    animation-delay: 400ms;
+    animation-name: animation-menu;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+    transform-origin: top;
+}
+
+.animation-desserts {
+    transform: scaleY(0);
+    animation-duration: 300ms;
+    animation-delay: 700ms;
+    animation-name: animation-menu;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+    transform-origin: top;
+}
+
+@keyframes animation-menu {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
 }
 
 @media only screen and (max-width: 768px) {
