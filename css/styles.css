@@ -199,7 +199,7 @@ footer i {
   width: 25%;
   font-weight: bold;
   transition: all 400ms;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .explication__liste__elements::before {
   display: flex;
@@ -257,7 +257,7 @@ footer i {
   margin-bottom: 50px;
   border-radius: 20px 20px 20px 20px;
   text-decoration: none;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .restaurants__choix__carte img {
   height: 70%;
@@ -368,7 +368,7 @@ VERSION MOBILE
   border-radius: 15px 15px 15px 15px;
   margin-bottom: 15px;
   padding: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .menu__carte {
   width: 32%;
