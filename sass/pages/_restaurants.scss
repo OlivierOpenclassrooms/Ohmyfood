@@ -132,23 +132,30 @@
 
 /*HOVER DES CHOIX*/
 
+.menu__contenu {
+    animation-direction: reverse;
+}
+
 .animation__hover__menu {
     display: flex;
+    position: relative;
     flex-direction: row;
 }
 
 .animation{
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $couleur-tertiaire;
-    min-width: 70px;
-    margin-right: -10px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    margin-left: 20px;
+    width: 0px;
+    margin: -10px -10px -10px 20px;
+    transition-duration: 500ms;
     & div {
         display: flex;
+        scale: 0;
         height: 25px;
         width: 25px;
+        transition-duration: 500ms;
         border: 1px;
         background-color: white;
         border-radius: 50%;
@@ -164,38 +171,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0);
     animation-duration: 500ms;
-    animation-name: animation-hover;
+    width: 70px;
     animation-fill-mode: both;
     transition-timing-function: ease-in-out;
     transform-origin: right;
 }
 
-.animation__rotation {
-    transform: rotate(0deg);
+.menu__contenu:hover .animation__rotation {
+    transform: rotate(360deg);
     animation-duration: 500ms;
-    animation-name: animation-rotation;
+    scale: 1;
     animation-fill-mode: both;
     transition-timing-function: ease-in-out;
-}
-
-@keyframes animation-hover {
-    from {
-        transform: scaleX(0);
-    }
-    to {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes animation-rotation {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -214,5 +202,4 @@
             width: 95%;
         }
     }
-
 }
