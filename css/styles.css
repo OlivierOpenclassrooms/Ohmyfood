@@ -360,9 +360,10 @@ VERSION MOBILE
 .menu__contenu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   text-decoration: none;
+  justify-content: space-between;
   color: black;
+  overflow: hidden;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   margin-bottom: 15px;
@@ -408,6 +409,7 @@ VERSION MOBILE
   justify-content: flex-end;
   font-weight: bold;
   padding-left: 10px;
+  left: 0;
 }
 
 .placement-bouton {
@@ -416,6 +418,8 @@ VERSION MOBILE
   margin-bottom: 50px;
 }
 
+/*ANIMATIONS*/
+/*APPARITION DE LA CARTE*/
 .animation-entrees {
   transform: scaleY(0);
   animation-delay: 100ms;
@@ -452,6 +456,71 @@ VERSION MOBILE
   }
   to {
     transform: scaleY(1);
+  }
+}
+/*HOVER DES CHOIX*/
+.animation__hover__menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.animation {
+  display: none;
+  background-color: #99E2D0;
+  min-width: 70px;
+  margin-right: -10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 20px;
+}
+.animation div {
+  display: flex;
+  height: 25px;
+  width: 25px;
+  border: 1px;
+  background-color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.animation i {
+  color: #99E2D0;
+}
+
+.menu__contenu:hover .animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  animation-duration: 500ms;
+  animation-name: animation-hover;
+  animation-fill-mode: both;
+  transition-timing-function: ease-in-out;
+  transform-origin: right;
+}
+
+.animation__rotation {
+  transform: rotate(0deg);
+  animation-duration: 500ms;
+  animation-name: animation-rotation;
+  animation-fill-mode: both;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes animation-hover {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes animation-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 @media only screen and (max-width: 768px) {
