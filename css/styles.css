@@ -365,6 +365,7 @@ VERSION MOBILE
   justify-content: space-between;
   color: black;
   overflow: hidden;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   margin-bottom: 15px;
