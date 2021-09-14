@@ -81,21 +81,24 @@ h4 {
 }
 
 footer {
+  display: flex;
   background-color: #353535;
 }
-footer div {
+footer .footer__elements {
   display: flex;
   flex-direction: column;
   max-width: 1024px;
   margin: auto;
+  width: 100%;
   padding-bottom: 30px;
   padding-left: 20px;
 }
-footer span {
+footer .footer__elements__informations {
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 footer a {
-  align-items: center;
   text-decoration: none;
   color: white;
 }
@@ -105,6 +108,7 @@ footer a:hover {
 footer i {
   width: 15px;
   margin-right: 10px;
+  color: white;
 }
 
 .conteneur__chargement {

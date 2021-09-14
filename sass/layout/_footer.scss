@@ -1,26 +1,31 @@
 footer {
+    display: flex;
     background-color: #353535;
-    div {
+    .footer__elements {
         display: flex;
         flex-direction: column;
         max-width: 1024px;
         margin: auto;
+        width: 100%;
         padding-bottom: 30px;
         padding-left: 20px;
-        }
-        span {
+    }
+        .footer__elements__informations {
+            display: flex;
+            align-items: center;
             margin-bottom: 10px;
         }
         a {
-            align-items: center;
             text-decoration: none;
             color: white;
         }
-        a:hover {
+        a:hover{
             text-decoration: underline;
         }
-            i {
-                width: 15px;
-                margin-right: 10px;
-            }
+        i {
+            width: 15px;
+            margin-right: 10px;
+            color: white;
+        }
 }
+
