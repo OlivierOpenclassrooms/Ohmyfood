@@ -1,0 +1,61 @@
+.conteneur__chargement {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: white;
+    opacity: 0.95;
+    animation-name: fadeout;
+    animation-delay: 1300ms;
+    animation-fill-mode: forwards;
+    h1 {
+        margin-bottom: 0px;
+    }
+}
+
+.chargement {
+    width: 300px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid rgb(192, 190, 190);
+    &__barre {
+        transform-origin: left;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        animation-name: fadein;
+        animation-duration: 1000ms;
+        animation-delay: 200ms;
+        animation-fill-mode: both;
+        background: linear-gradient(to right, $couleur-primaire,$couleur-secondaire, $couleur-tertiaire);
+    }
+}
+
+@keyframes fadein{
+    0% {
+        transform: scaleX(0);
+    }
+    33% {
+        transform: scaleX(0.33);
+    }
+    66% {
+        transform: scaleX(0.66);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeout {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
