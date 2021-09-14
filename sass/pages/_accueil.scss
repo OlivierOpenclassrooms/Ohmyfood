@@ -126,6 +126,13 @@
     }
 }
 
+.conteneur {
+    width: 100%;
+    max-width: 1024px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .restaurants__choix__carte {
     display: flex;
     flex-direction: column;
