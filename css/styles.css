@@ -123,9 +123,8 @@ footer i {
   height: 100%;
   z-index: 1000;
   background-color: white;
-  opacity: 0.95;
   animation-name: fadeout;
-  animation-delay: 1300ms;
+  animation-delay: 1200ms;
   animation-fill-mode: forwards;
 }
 .conteneur__chargement h1 {
@@ -145,7 +144,6 @@ footer i {
   transform: scaleX(0);
   animation-name: fadein;
   animation-duration: 1000ms;
-  animation-delay: 200ms;
   animation-fill-mode: both;
   background: linear-gradient(to right, #9356DC, #FF79DA, #99E2D0);
 }
