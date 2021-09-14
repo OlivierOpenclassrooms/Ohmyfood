@@ -20,7 +20,7 @@ h4 {
   color: white;
   font-family: "Shrikhand", "cursive";
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 /*GRAND BOUTON*/
@@ -51,6 +51,7 @@ h4 {
 .coeur i:hover {
   color: #FF79DA;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header-accueil {
@@ -96,7 +97,7 @@ footer .footer__elements {
 footer .footer__elements__informations {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 footer a {
   text-decoration: none;
@@ -232,6 +233,8 @@ footer i {
   padding: 0;
   list-style: none;
   counter-reset: li;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 .explication__liste__elements {
@@ -307,6 +310,7 @@ footer i {
   max-width: 1024px;
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 40px;
 }
 
 .restaurants__choix__carte {
@@ -413,6 +417,7 @@ VERSION MOBILE
   max-width: 1024px;
   padding-right: 25px;
   padding-left: 25px;
+  padding-bottom: 40px;
   background-color: #F2F2F2;
   border-radius: 40px 40px 0 0;
 }
