@@ -127,8 +127,10 @@ footer i {
   animation-delay: 1200ms;
   animation-fill-mode: forwards;
 }
-.conteneur__chargement h1 {
-  margin-bottom: 0px;
+.conteneur__chargement p {
+  font-family: "Shrikhand", "cursive";
+  font-size: 30px;
+  margin-bottom: 0;
 }
 
 .chargement {
@@ -537,13 +539,8 @@ VERSION MOBILE
   }
 }
 /*HOVER DES CHOIX*/
-.menu__contenu {
-  animation-direction: reverse;
-}
-
 .animation__hover__menu {
   display: flex;
-  position: relative;
   flex-direction: row;
 }
 
